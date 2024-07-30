@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form Layouts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Layouts with Bootstrap</h1>
+
+    <!-- Task 1: Multi-column form layout -->
+    <h2>Task 1: Multi-column form layout</h2>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Task 2: Inline form layout -->
+    <h2>Task 2: Inline form layout</h2>
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+
+    <!-- Task 3: Stacked form layout -->
+    <h2>Task 3: Stacked form layout</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
